@@ -5,3 +5,4 @@ ActionMailer::Base.smtp_settings[:user_name]      = ENV['MAILER_USERNAME']
 ActionMailer::Base.smtp_settings[:password]       = ENV['MAILER_PASSWORD']
 ActionMailer::Base.smtp_settings[:domain]         = ENV['MAILER_DOMAIN']
 
+ActionMailer::Base.default_options                = { from: ENV['MAILER_SENDER'] }
